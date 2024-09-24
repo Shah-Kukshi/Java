@@ -34,5 +34,19 @@ public class Main {
 //        Type casting
         int num = (int)(65.87f);
         System.out.println(num);
+
+//        automatic type promotion in expression
+        int a = 257;
+        byte b = (byte)(a); //Range 0 - 256
+        System.out.println(b); //257 % 256 =1
+
+        byte num1 = 40;
+        byte num2 = 50;
+        byte num3 = 100;
+        int res = (num1*num2)/num3; // here num1 , num2 , num3 are automatically converted in int . here num1 , num2 , num3 are counted as int only in expression
+        System.out.println(res);
+
+        int let = 'A';
+        System.out.println((let));
     }
 }
